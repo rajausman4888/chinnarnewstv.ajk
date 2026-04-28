@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinnar News TV - Kashmir's Voice</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="dark-mode">
+    <!-- Canvas for falling Chinar leaves -->
+    <canvas id="leafCanvas"></canvas>
+
+    <!-- Navbar -->
+   <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <!-- Logo same rakha -->
+        <div class="logo-container">
+            <img src="https://i.ibb.co/S47Y26mJ/image.jpg" alt="Chinnar News TV Logo" class="channel-logo">
+            <div class="logo-text">
+                <h2>Chinnar News TV</h2>
+                <p>Kashmir's Voice</p>
+            </div>
+        </div>
+        
+        <!-- Nav Menu -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link active" data-section="home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#news" class="nav-link" data-section="news-section"><i class="fas fa-mountain"></i> Kashmir</a></li>
+            <li><a href="#live" class="nav-link" data-section="live"><i class="fas fa-video"></i> Live</a></li>
+            <li><a href="history.html" class="nav-link" data-section="history"><i class="fas fa-book"></i> History</a></li>
+        </ul>
+        
+        <!-- Right side buttons -->
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </div>
+        
+        <!-- 🆕 MOBILE HAMBURGER (End mein) -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Latest News</h1>
+            <p class="hero-subtitle">Coming Soon</p>
+            <div class="hero-cta">
+                <a href="#news" class="cta-button">Watch Live</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news">
+        <div class="container">
+            <h2 class="section-title">Breaking News</h2>
+            <div class="news-grid">
+                <article class="news-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ba/c0/d8/neelum-valley.jpg?w=700&h=400&s=1" alt="Neelum Valley" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="category">Kashmir</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Neelum Valley Records Highest Tourist Footfall</h3>
+                        <p>Record-breaking number of tourists visit Kashmir's crown jewel this season, boosting local economy.</p>
+                        <div class="card-meta">
+                            <span class="date">2 hours ago</span>
+                            <span class="views"><i class="fas fa-eye"></i> 12.5K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNjYac_3HoodyFK1fsfXHXNtMuFSeYIKEpA&s" alt="Muzaffarabad" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="category">Development</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Muzaffarabad Infrastructure Revolution</h3>
+                        <p>Government unveils Rs. 5 billion development package for state capital's transformation.</p>
+                        <div class="card-meta">
+                            <span class="date">4 hours ago</span>
+                            <span class="views"><i class="fas fa-eye"></i> 8.2K</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/3b/8b/16/view-from-gangachoti.jpg?w=700&h=-1&s=1" alt="view-from-gangachoti" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="category">Environment</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ganga choti</h3>
+                        <p>Ganga Choti, a 10,000-foot-high mountain peak in Pakistan's Bagh District, Kashmir, recently successfully concluded a major winter festival featuring skiing, ice hockey, and hiking.</p>
+                        <div class="card-meta">
+                            <span class="date">1 day ago</span>
+                            <span class="views"><i class="fas fa-eye"></i> 23.1K</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="owner-section">
+        <div class="container">
+            <h2 class="section-title">Our Visionary Founder</h2>
+            <div class="owner-card" id="ownerCard">
+                <div class="owner-image">
+                     <img src="https://i.ibb.co/Wv8Hn1RT/image.jpg" alt="Raja Habib Kashmiri">
+                </div>
+                <div class="owner-info">
+                    <h3>Raja Habib Kashmiri</h3>
+                    <p>Founder & Owner <br> <span>Click to learn more</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Section -->
+    <section class="live-section" id="live">
+        <div class="container">
+            <h2 class="section-title">LIVE BROADCAST</h2>
+            <div class="live-wrapper">
+                <div class="live-player">
+                    <iframe src="https://www.youtube.com/embed/live_stream?channel=UC_x5XG1OV2P6uZZ5FSM9Ttw&autoplay=1" 
+                            title="Chinnar News TV Live" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+    <div class="social-panel">
+    <h3>Follow Us</h3>
+    <div class="social-links">
+        <a href="https://www.facebook.com/share/18F4muBEFd/" target="_blank" class="social-icon facebook" title="Facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a href="https://x.com/ChinaarTv" target="_blank" class="social-icon twitter" title="Twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a href="https://youtube.com/@chinaarnewstv?si=weAbePJnVHgwhTyE" target="_blank" class="social-icon youtube" title="YouTube" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+        </a>
+        <a href="https://www.tiktok.com/@chinaarnewstvajk?_r=1&_t=ZN-95rZAiTjWNS" target="_blank" class="social-icon tiktok" title="TikTok" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+            <span>TikTok</span>
+        </a>
+        <a href="#" target="_blank" class="social-icon instagram" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+    </div>
+</div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-grid">
+                <div class="mission-card" data-aos="fade-up">
+                    <div class="mission-icon">🗣️</div>
+                    <h3>Voice of Kashmir</h3>
+                    <p>Amplifying the true voice of Kashmir to the world</p>
+                </div>
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mission-icon">📰</div>
+                    <h3>Authentic News</h3>
+                    <p>Delivering unbiased, factual reporting 24/7</p>
+                </div>
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mission-icon">🌸</div>
+                    <h3>Culture & Heritage</h3>
+                    <p>Preserving and promoting Kashmir's rich traditions</p>
+                </div>
+                <div class="mission-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mission-icon">⚖️</div>
+                    <h3>Truth & Justice</h3>
+                    <p>Highlighting real issues faced by Kashmiri people</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Modal -->
+    <div class="modal" id="ownerModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                   <img src="https://i.ibb.co/7tZCK9Xb/image.jpg" alt="Raja Habib Kashmiri">
+                </div>
+                <div class="modal-text">
+                    <h2>Raja Habib Kashmiri</h2>
+                    <p class="modal-subtitle">Founder & Owner - Chinnar News TV</p>
+                    <div class="owner-bio">
+                        <p>Raja Habib Kashmiri is the founder and owner of Chinnar News TV. He is a well-known personality from Kashmir who has worked in multiple fields including media, tourism and television production.</p>
+                        <p>He has served in the Pakistani entertainment industry as a Line Producer, Production Manager and has been involved in several successful drama productions. Some of the most popular projects include <strong>Parizaad</strong>, <strong>Ehd-e-Wafa</strong>, <strong>Duniya Pur</strong>  and many more.And also work in <strong>ISPR</strong>.</p>
+                        <p>He has also worked on OSP (On-location shoots) and contributed to productions related to the Pakistani National Tarana.</p>
+                        <p>Apart from media, he played an important role in promoting tourism in Kashmir by founding <strong>Heaven Trackers</strong>, one of the earliest tourism companies in the region.</p>
+                        <p>His vision through Chinnar News TV is to raise the voice of Kashmir and highlight its culture, beauty, and real issues globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Channel Info -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="https://i.ibb.co/S47Y26mJ/image.jpg" alt="Chinnar News TV" class="footer-channel-logo">
+                </div>
+                <div class="brand-text">
+                    <h3>Chinnar News TV</h3>
+                    <p>Kashmir's Authentic Voice</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/18F4muBEFd/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/ChinaarTv" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/@chinaarnewstv?si=weAbePJnVHgwhTyE" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/@chinaarnewstvajk?_r=1&_t=ZN-95rZAiTjWNS" target="_blank" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#kashmir"><i class="fas fa-mountain"></i> Kashmir</a></li>
+                    <li><a href="#live"><i class="fas fa-video"></i> Live TV</a></li>
+                    <li><a href="history.html"><i class="fas fa-book"></i> History</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +92-333-3322779</li>
+                    <li><i class="fas fa-envelope"></i> info@chinnarnewstv.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Muzaffarabad, AJK</li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Stay updated with latest Kashmir news</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+       <div class="footer-bottom">
+    <div class="footer-bottom-content">
+        <p>&copy; 2024 Chinnar News TV. All Rights Reserved. | Founded by <strong>Raja Habib Kashmiri</strong></p>
+        <div class="footer-bottom-links">
+    <a href="#" onclick="showPopup('privacy');return false;" title="Privacy Policy">Privacy</a>
+    <a href="#" onclick="showPopup('terms');return false;" title="Terms of Service">Terms</a>
+    <a href="#" onclick="showPopup('advertise');return false;" title="Advertise">Ads</a>
+</div>
+    </div>
+</div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

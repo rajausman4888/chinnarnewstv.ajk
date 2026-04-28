@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmir History - Chinnar News TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://i.ibb.co">
+    <link rel="dns-prefetch" href="https://i.ibb.co">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+</head>
+<body class="dark-mode">
+    <!-- Canvas for falling Chinar leaves -->
+    <canvas id="leafCanvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Channel Logo -->
+            <div class="logo-container">
+                 <img src="https://i.ibb.co/S47Y26mJ/image.jpg" alt="Chinnar News TV Logo" class="channel-logo">
+                <div class="logo-text">
+                    <h2>Chinnar News TV</h2>
+                    <p>Kashmir's Voice</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#kashmir" class="nav-link"><i class="fas fa-mountain"></i> Kashmir</a></li>
+                <li><a href="#live" class="nav-link"><i class="fas fa-video"></i> Live</a></li>
+                <li><a href="history.html" class="nav-link active"><i class="fas fa-book"></i> History</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero history-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Kashmir History</h1>
+            <p class="hero-subtitle">From Ancient Times to Modern Era</p>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <div class="history-container">
+        <!-- Introduction -->
+        <section class="history-section" id="intro">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Introduction to Kashmir</h2>
+                    <button class="translate-btn" data-section="intro" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="intro-content">
+                    <div class="history-image">
+                        <img src="https://images.unsplash.com/photo-1627894485200-b92fb4353967?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kashmir Valley" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Kashmir, often called "Paradise on Earth," has a rich history spanning thousands of years. Nestled between the great Himalayan ranges, this region has been home to diverse civilizations, religions, and cultures. From ancient sages to modern freedom struggles, Kashmir's story is one of resilience and beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ancient History -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Ancient History</h2>
+                    <button class="translate-btn" data-section="ancient" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="ancient-content">
+                    <div class="history-image">
+                        <img src="https://cdn.britannica.com/16/234616-050-AE45D137/Damage-Balakot-Pakistan-due-to-earthquake-October-8-2005-Kashmir.jpg" alt="Ancient Kashmir" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>The 7.6 magnitude earthquake on October 8, 2005, struck Azad Kashmir and surrounding regions at 8:50 a.m., with its epicenter near Muzaffarabad. It was one of South Asia's worst disasters, causing over 73,000–87,000 deaths, injuring over 38,000, and leaving 3.5 million people homeless. The devastation severely impacted infrastructure, particularly in Muzaffarabad. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Muslim Rule -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Muslim Rule</h2>
+                    <button class="translate-btn" data-section="muslim" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="muslim-content">
+                    <div class="history-image">
+                        <img src="https://elements-resized.envatousercontent.com/elements-video-cover-images/41fbcced-f534-45bf-9b35-b32c4d384171/video_preview/video_preview_0000.jpg?w=500&cf_fit=cover&q=85&format=auto&s=48619aa2505938ab2963cc3556ed143f03e3a134c3e8b3e5e0917f8f2c64ae04" alt="Muslim Architecture" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Azad Jammu and Kashmir (AJK) operates under an Islamic-based legal system where Shari’ah is the supreme law, ensuring no legislation contradicts the Quran and Sunnah. The 1974 Constitution, coupled with the Enforcement of Shari’ah Act 1989, dictates that laws must conform to Islamic teachings, enforced by the AJK Shariat Court and appointed Muftis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mughal Sikh Dogra -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mughal, Sikh & Dogra Rule</h2>
+                    <button class="translate-btn" data-section="dynasties" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="dynasties-content">
+                    <div class="history-image">
+                        <img src="https://www.jammukashmirnow.com/Encyc/2020/9/8/2_03_09_48_GH_1_H@@IGHT_420_W@@IDTH_802.jpg" alt="Mughal Gardens" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>The region now known as Azad Jammu and Kashmir (AJK) was shaped by successive Mughal (1586–1752), Sikh (1819–1846), and Dogra (1846–1947) rules. Mughals treated it as a favored province, Sikhs brought military annexation, and the Dogras established control through the Treaty of Amritsar, influencing local administrative, cultural, and architectural landscapes. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1947 Partition -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">1947 Partition & Modern History</h2>
+                    <button class="translate-btn" data-section="partition" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="partition-content">
+                    <div class="history-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5cSlWQjOMFseIDhzMngtXgJ1ZZVN7AxT6Q&s" alt="Modern Kashmir" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Azad Kashmir was formed following the 1947 Partition of India, when local rebels and Pashtun tribesmen revolted against the Dogra Maharaja Hari Singh, leading to a war between India and Pakistan. Following a 1949 UN-brokered ceasefire, the western part of the state came under Pakistani control, while the region was established as a self-governing entity administered by Pakistan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture & Traditions -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Culture & Traditions</h2>
+                    <button class="translate-btn" data-section="culture" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="culture-content">
+                    <div class="history-image">
+                        <img src="https://www.pakpedia.pk/files/Image/Traditional_Dresses_of_Kashmir.jpg" alt="Kashmiri Pheran" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Jammu Kashmir – Culture and Tradition | RitiRiwazAzad Kashmir boasts a rich cultural tapestry blending Kashmiri, Pahari, and Punjabi influences, deeply rooted in Islamic traditions. The culture is characterized by vibrant festivals (Eid), traditional attire like Kashmiri shawls and Kurtas, intricate handicrafts (woodwork, embroidery), and aromatic cuisine, including Wazwan and pulao.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Festivals & Tourism -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Festivals & Tourism</h2>
+                    <button class="translate-btn" data-section="tourism" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="tourism-content">
+                    <div class="history-image">
+                        <img src="https://i.tribune.com.pk/media/images/DSC_84441676360854-7/DSC_84441676360854-7.jpg" alt="Neelum Valley" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Azad Kashmir is a rapidly growing tourism destination, boasting over 1.5 million visitors in 2025, with peak activities in Neelum Valley, Pir Chinasi, and the Haveli district. The region hosts vibrant cultural festivals featuring local music, traditional dances, and food, alongside tourism-focused events highlighting scenic, high-altitude landscapes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Personalities -->
+        <section class="history-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Famous Personalities</h2>
+                    <button class="translate-btn" data-section="personalities" data-translated="false">ترجمہ اردو</button>
+                </div>
+                <div class="history-content" id="personalities-content">
+                    <div class="history-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Cow8GZ03BAUpQYULEPAMlyGG2XgqVOqg2A&s" alt="Kashmiri Scholars" loading="lazy">
+                    </div>
+                    <div class="history-text">
+                        <p>Famous personalities of Azad Kashmir (AJK) are largely defined by their roles in the region’s political, historical, and struggle movements. Key figures include founding president Sardar Muhammad Ibrahim Khan, political leaders Chaudhary Ghulam Abbas, Sardar Sikandar Hayat Khan, and Raja Farooq Haider Khan, along with prominent leaders like Masood Khan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- HISTORY DUAL LANGUAGE FOOTER -->
+<footer class="history-footer" id="historyFooter">
+    <div class="container">
+        <div class="history-footer-content">
+            <!-- Quote Section -->
+            <div class="history-quote">
+                <blockquote id="historyQuote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Kashmir is Paradise on Earth, its history is our shared heritage"</p>
+                    <cite>— Raja Habib Kashmiri</cite>
+                </blockquote>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="history-quick-links">
+                <h4 id="historyTitle">Key Chapters of History</h4>
+                <div class="quick-links-grid">
+                    <a href="#ancient-content" class="quick-link" data-urdu="قدیم دور">
+                        <i class="fas fa-mountain"></i> Ancient Era
+                    </a>
+                    <a href="#muslim-content" class="quick-link" data-urdu="اسلامی دور">
+                        <i class="fas fa-mosque"></i> Islamic Era
+                    </a>
+                    <a href="#dynasties-content" class="quick-link" data-urdu="سلطانی دور">
+                        <i class="fas fa-crown"></i> Dynasties
+                    </a>
+                    <a href="#partition-content" class="quick-link" data-urdu="تقسیم ہند">
+                        <i class="fas fa-flag"></i> Partition
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats & Bottom -->
+        <div class="history-footer-bottom">
+            <div class="footer-stats">
+                <span><i class="fas fa-book"></i> <span id="years">5000+</span> Years of History</span>
+                <span><i class="fas fa-users"></i> Millions of Stories</span>
+                <span><i class="fas fa-heart"></i> Love for Kashmir</span>
+            </div>
+            <p id="footerCredit">&copy; 2024 Chinnar News TV | Kashmir's Voice</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Urdu Translations Data -->
+    <script>
+window.urduTranslations = {
+    intro: `کشمیر، جسے اکثر "زمین پر جنت" کہا جاتا ہے، ہزاروں سالوں پر محیط ایک بھرپور تاریخ رکھتا ہے۔ 
+            ہمالیہ کے عظیم سلسلوں کے درمیان واقع یہ خطہ متنوع تہذیبوں، مذاہب اور ثقافتوں کا گھر رہا ہے۔ 
+            قدیم بابا سے لے کر جدید آزادی کی جدوجہد تک، کشمیر کی کہانی لچک اور خوبصورتی سے عبارت ہے۔`,
+    
+    muslim: `آزاد جموں و کشمیر (AJK) ایک اسلامی بنیاد پر قانونی نظام کے تحت کام کرتا ہے جہاں شریعت اعلیٰ ترین قانون ہے، 
+             اس بات کو یقینی بناتا ہے کہ کوئی قانون سازی قرآن و سنت سے متصادم نہ ہو۔ 
+             1974 کا آئین، نفاذ شریعت ایکٹ 1989 کے ساتھ مل کر، یہ حکم دیتا ہے کہ قوانین کو اسلامی تعلیمات کے مطابق ہونا چاہیے، 
+             جسے آزاد جموں و کشمیر کی شریعت کورٹ نے نافذ کیا ہے اور مفتیوں کو مقرر کیا ہے۔`,
+    
+    dynasties: `یہ خطہ اب آزاد جموں و کشمیر (AJK) کے نام سے جانا جاتا ہے جس کی تشکیل یکے بعد دیگرے مغل (1586-1752)، سکھ (1819-1846) اور ڈوگرہ (1846-1947) کے قوانین سے ہوئی۔ 
+                مغلوں نے اسے ایک پسندیدہ صوبہ سمجھا، سکھوں نے فوجی الحاق لایا، اور ڈوگروں نے معاہدہ امرتسر کے ذریعے کنٹرول قائم کیا، 
+                مقامی انتظامی، ثقافتی، اور تعمیراتی مناظر کو متاثر کیا۔`,
+    
+    partition: `آزاد کشمیر 1947 کی تقسیم ہند کے بعد تشکیل دیا گیا تھا، جب مقامی باغیوں اور پشتون قبائلیوں نے ڈوگرہ مہاراجہ ہری سنگھ کے خلاف بغاوت کی تھی، 
+                جس کے نتیجے میں ہندوستان اور پاکستان کے درمیان جنگ چھڑ گئی تھی۔ 
+                1949 میں اقوام متحدہ کی ثالثی میں ہونے والی جنگ بندی کے بعد، ریاست کا مغربی حصہ پاکستان کے کنٹرول میں آگیا، 
+                جب کہ یہ خطہ پاکستان کے زیر انتظام ایک خود مختار ادارے کے طور پر قائم ہوا۔`,
+    
+    culture: `جموں کشمیر - ثقافت اور روایت | RitiRiwazAzad کشمیر کشمیری، پہاڑی اور پنجابی اثرات کو ملا کر ایک بھرپور ثقافتی ٹیپسٹری کا حامل ہے، 
+              جس کی جڑیں اسلامی روایات میں گہری ہیں۔ یہ ثقافت متحرک تہواروں (عید)، کشمیری شالوں اور قرتوں جیسے روایتی لباس، 
+              پیچیدہ دستکاری (لکڑی کا کام، کڑھائی) اور خوشبودار کھانوں بشمول وازوان اور پلاؤ کی خصوصیت رکھتی ہے۔`,
+    
+    tourism: `آزاد کشمیر ایک تیزی سے بڑھتا ہوا سیاحتی مقام ہے، جو کہ 2025 میں 1.5 ملین سے زیادہ سیاحوں کا فخر ہے، 
+             جس میں وادی نیلم، پیر چناسی اور ضلع حویلی میں سرگرمیاں عروج پر ہیں۔ 
+             یہ خطہ مقامی موسیقی، روایتی رقص اور کھانے کے ساتھ متحرک ثقافتی تہواروں کی میزبانی کرتا ہے، 
+             اس کے ساتھ ساتھ سیاحت پر مبنی تقریبات کے ساتھ قدرتی، اونچائی والے مناظر کو نمایاں کیا جاتا ہے۔`,
+    
+    personalities: `آزاد کشمیر (AJK) کی مشہور شخصیات کی بڑی حد تک اس خطے کی سیاسی، تاریخی اور جدوجہد کی تحریکوں میں ان کے کردار کی تعریف کی جاتی ہے۔ 
+                    اہم شخصیات میں بانی صدر سردار محمد ابراہیم خان، سیاسی رہنما چوہدری غلام عباس، سردار سکندر حیات خان، 
+                    اور راجہ فاروق حیدر خان کے علاوہ مسعود خان جیسے اہم رہنما شامل ہیں۔`,
+    
+    ancient: `8 اکتوبر 2005 کو 7.6 شدت کا زلزلہ صبح 8 بجکر 50 منٹ پر آزاد کشمیر اور گرد و نواح میں آیا، اس کا مرکز مظفرآباد کے قریب تھا۔ 
+              یہ جنوبی ایشیا کی بدترین آفات میں سے ایک تھی، جس کی وجہ سے 73,000-87,000 اموات ہوئیں، 38,000 سے زیادہ زخمی ہوئے، 
+              اور 3.5 ملین لوگ بے گھر ہوئے۔ اس تباہی نے انفراسٹرکچر کو بری طرح متاثر کیا، خاص طور پر مظفرآباد میں۔`
+};
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
